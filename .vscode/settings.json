@@ -1,0 +1,39 @@
+{
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.clang_format_style": "file",
+
+  "autopep8.args": [
+    "--indent-size=2",
+  ],
+  "pylint.args": [
+    "--indent-string='  '", // 2 spaces
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.addImport.exactMatchOnly": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.enablePytestExtra": true,
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/install/*/lib/python3.10/dist-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages",
+  ],
+  "python.analysis.gotoDefinitionInStringLiteral": true,
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "strict",
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/install/*/lib/python3.10/dist-packages",
+    "/opt/ros/humble/lib/python3.10/site-packages",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages",
+  ],
+  "python.missingPackage.severity": "Warning",
+  "ros.distro": "humble",
+}
